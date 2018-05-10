@@ -1,19 +1,3 @@
-# ZSDD
-##Zero-suppressed Sentential Decision Diagrams
-Sample software of Zero-suppressed Sentential Decision Diagrams (ZSDDs), which compiles a CNF/DNF into a ZSDD. Please see the paper for the details of ZSDDs.
-
-
-##Usage
-```
-zsdd [-c .] [-d .] [-v .] [-R .] [-S .]  [-h]
-    -c FILE        set input CNF file
-    -d FILE        set input DNF file
-    -v FILE        set input VTREE file (default is a right-linear vtree)
-    -e             use zsdd without implicit partitioning
-    -R FILE        set output ZSDD file
-    -S FILE        set output ZSDD (dot) file
-    -h             show help message and exit
-```    
-
-##Reference
-Masaaki Nishino, Norihito Yasuda, Shin-ichi Minato, and Masaaki Nagata: "Zero-suppressed Sentential Decision Diagrams," In Proc. of the 30th AAAI Conference on Artificial Intelligence (AAAI2016), pp.1058--1066, Feb. 2016. [Paper](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12434)
+SDD采用软件包的简化版，通过读取给定的cnf和vtree(balanced)文件生产SddNode。
+该版本sdd vtree的decomp形式采用的对齐方式为论文中提到的两种规约形式.
+通过调用生成的sdd转化成EPD。EPD的两种结构(decomp,disjunction).
